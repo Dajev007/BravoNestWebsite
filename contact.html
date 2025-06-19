@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BravoNest — Contact</title>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo-container">
+        <img
+          src="images/Modern-Engineering-Logo-Featuring-Eagle-Emblem.png"
+          alt="BravoNest Logo"
+          class="nav-logo"
+          onerror="this.onerror=null; this.src='images/fallback-logo.svg';"
+        />
+        <div class="logo-fallback" style="display:none;">
+          <i class="fas fa-graduation-cap"></i>
+          <span>BravoNest</span>
+        </div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="terms.html">Terms</a></li>
+
+      </ul>
+      <button class="mobile-menu-toggle" id="mobileMenuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- CONTACT SECTION -->
+  <main>
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2 class="section-title fade-in" style="color: var(--white);">
+          Contact &amp; Signup
+        </h2>
+        <p class="section-subtitle fade-in" style="color: rgba(255,255,255,0.8);">
+          Ready to start your engineering journey? Get in touch with us!
+        </p>
+        <div class="contact-content">
+          <div class="contact-form fade-in">
+            <h3 style="margin-bottom: 1.5rem; color: var(--secondary-blue);">
+              Reserve Your Spot
+            </h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your full name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="course">Course of Interest</label>
+                <select id="course" name="course" required>
+                  <option value="">Select a program</option>
+                  <option value="pre-engineering">Proton Pre Engineering School</option>
+                  <option value="project-support">Engineering Project Support</option>
+                  <option value="both">Both Programs</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Tell us about your goals and interests"
+                ></textarea>
+              </div>
+              <button type="submit" class="cta-button" style="width: 100%;">
+                Submit &amp; Reserve Your Spot
+              </button>
+            </form>
+          </div>
+          <div class="contact-info fade-in">
+            <h3>Get In Touch</h3>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>123 Engineering Plaza, Tech City, TC 12345</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+94 72 123</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>info@bravoNest.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <span>Mon–Fri: 9AM–6PM, Sat: 10AM–4PM</span>
+            </div>
+            <div style="margin-top: 2rem;">
+              <h4 style="color: var(--secondary-blue); margin-bottom: 1rem;">
+                Follow Us
+              </h4>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+      <p>&copy; 2024 BravoNest Pvt Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
